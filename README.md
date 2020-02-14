@@ -1,11 +1,12 @@
-# ZCore Paper Wallet
 
-### Como usar?
+# DNGRcoin Бумажный кошелек
 
-#### 1. Baixe os arquivos no seu computador.
-#### 2. Abra o paper.html no seu navegador
-#### 3. Faça movimentos aleatórios com seu mouse na página, assim os dados se tornam mais seguros e aleatórios.
-#### 4. Salve os QR Codes na tela inicial, sendo o esquerdo seu endereço para depósitos e o direto uma Private Key, e dão controle total a seu saldo.
-#### 5. Para criar paper wallet para imprimir, vá na aba Paper Wallet, escolha quantas paper wallet quer, e clique em Print.
-#### Lembrando que há 2 modelos de imagem no diretório, você pode alternar mudando o nome da principal para paper.png
+### Как пользоваться?
 
+#### 1. Загрузите файлы на свой компьютер. https://github.com/dngrcoin/paperwallet/archive/master.zip
+#### 2. Откройте paper.html в вашем браузере
+#### 3. Делайте случайные движения с помощью мыши на странице, чтобы данные стали более безопасными и случайными.
+#### 4. Сохраните QR-коды на главном экране, получите полный контроль над своим балансом.
+#### 5. Чтобы создать бумажный кошелек для печати, перейдите на вкладку Бумажный кошелек, выберите количество бумажных кошельков и нажмите «Печать».
+#### 6. Чтобы импортировать приватный ключ наберите команду   ./dngrcoin-cli importprivkey 3ggNckxXRQfRVe7tU22AXB4JYjvUNfGiLHdHZp5f8E8h1QuZVVH
+ 
