@@ -5239,16 +5239,16 @@ Bitcoin.ECKey = (function () {
 	ECKey.isWalletImportFormat = function (key) {
 		key = key.toString();
 		return (ECKey.privateKeyPrefix == 0x50) ?  // //3=80=50
-							(/^6[123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz]{50}$/.test(key)) :
-							(/^9[123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz]{50}$/.test(key));
+							(/^3[123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz]{50}$/.test(key)) :
+							(/^3[123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz]{50}$/.test(key));
 	};
 
 	// 52 characters base58
 	ECKey.isCompressedWalletImportFormat = function (key) {
 		key = key.toString();
 		return (ECKey.privateKeyPrefix == 0x1C) ? // C=28=1C
-							(/^T[123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz]{51}$/.test(key)) :
-							(/^c[123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz]{51}$/.test(key));
+							(/^C[123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz]{51}$/.test(key)) :
+							(/^C[123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz]{51}$/.test(key));
 	};
 
 	// 44 characters
@@ -6078,7 +6078,7 @@ body { font-family: Arial; }
 
 			<div id="detailarea" class="walletarea">	
 				<div id="detailcommands" class="commands">
-					<span><label id="detaillabelenterprivatekey">Enter Private Key (Encrypted Private Key (Password required) OR Private Key Hexadecimal Format)</label> <input type="text" id="detailprivkey" value="" onFocus="this.select();" onKeyPress="if (event.keyCode == 13) ninja.wallets.detailwallet.viewDetails();" /></span>
+					<span><label id="detaillabelenterprivatekey">Enter Private Key</label> <input type="text" id="detailprivkey" value="" onFocus="this.select();" onKeyPress="if (event.keyCode == 13) ninja.wallets.detailwallet.viewDetails();" /></span>
 					<span><input type="button" id="detailview" value="View Details" onClick="ninja.wallets.detailwallet.viewDetails();" /></span>
 					<span class="print"><input type="button" name="print" id="detailprint" value="Print" onClick="window.print();" /></span>
 					<div id="detailbip38commands">
